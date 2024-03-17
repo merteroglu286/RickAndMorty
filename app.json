@@ -25,6 +25,20 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "notification": {
+      "channels": [
+        {
+          "name": "default",
+          "sound": true,
+          "vibrate": true
+        },
+        {
+          "name": "test_channel",
+          "sound": true,
+          "vibrate": true
+        }
+      ]
     }
   }
 }
