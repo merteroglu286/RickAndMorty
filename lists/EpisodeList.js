@@ -73,22 +73,6 @@ export const EpisodeList = () => {
     const [nextPage, setNextPage] = useState("https://rickandmortyapi.com/api/episode");
     const [searchText, setSearchText] = useState("");
 
-    /*
-    const fetchNextPage = async () => {
-        if (loading) {
-            return;
-        }
-        setLoading(true);
-        const response = await fetch(nextPage);
-        const responseJson = await response.json();
-        setEpisodes((existingEpisodes) => {
-            return [...existingEpisodes, ...responseJson.results];
-        });
-        setNextPage(responseJson.info.next);
-        setLoading(false);
-    };
-*/
-
     const fetchNextPage = async () => {
         if (loading || !nextPage) {
             return;
